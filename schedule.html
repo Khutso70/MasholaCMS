@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard Mashola CMS</title>
+    <title>Schedule</title>
     <link
       href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
       rel="stylesheet"
@@ -40,8 +40,8 @@
       >
         <div class="input-group">
           <button class="btn btn-primary" id="btnAddNewClient" type="button">
-            <a href="addClient.html" class="text-white text-decoration-none">
-              Add New Client
+            <a href="addSchedule.html" class="text-white text-decoration-none">
+              Add New Schedule
             </a>
           </button>
         </div>
@@ -111,9 +111,9 @@
                 data-bs-parent="#sidenavAccordion"
               >
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="addClient.html">Add Client</a>
-                    <a class="nav-link" href="schedule.html">View Schedule</a>
-                    <a class="nav-link" href="addSchedule.html">Add Schedule</a>
+                  <a class="nav-link" href="addClient.html">Add Client</a>
+                  <a class="nav-link" href="schedule.html">View Schedule</a>
+                  <a class="nav-link" href="addSchedule.html">Add Schedule</a>
                 </nav>
               </div>
               <a
@@ -227,142 +227,81 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h1 class="mt-4">Dashboard</h1>
+            <h1 class="mt-4">Schedule</h1>
             <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <a href="index.html">Dashboard</a>
+              </li>
+              <li class="breadcrumb-item active">Schedule</li>
             </ol>
 
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table me-1"></i>
-                Clients
+                Schedules
               </div>
               <div class="card-body">
                 <table id="datatablesSimple">
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Surname</th>
-                      <th>Id number</th>
-                      <th>Case No.</th>
-                      <th>Matter</th>
-                      <th>Links</th>
+                      <th>PLAINTIFF</th>
+                      <th>DEFENDANT</th>
+                      <th>LOCATION</th>
+                      <th>HANDLER</th>
+                      <th>MATTER</th>
+                      <th>DATE</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Name</th>
-                      <th>Surname</th>
-                      <th>Id</th>
-                      <th>Case No.</th>
-                      <th>Matter</th>
-                      <th>Links</th>
+                      <th>PLAINTIFF</th>
+                      <th>DEFENDANT</th>
+                      <th>LOCATION</th>
+                      <th>HANDLER</th>
+                      <th>MATTER</th>
+                      <th>DATE</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
-                      <td>Thabo</td>
-                      <td>Segwale</td>
-                      <td>9801235647895</td>
-                      <td>256/22</td>
+                      <td>Thabo Segwale</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Beauty</td>
-                      <td>Maponya</td>
-                      <td>0001235647895</td>
-                      <td>256/23</td>
-                      <td>Divorce</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Lethabo</td>
-                      <td>Mabusela</td>
-                      <td>9909235647895</td>
-                      <td>256/20</td>
+                      <td>Selahle</td>
+                      <td>Khomotso</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
+                      <td>06/11/2023</td>
                     </tr>
                     <tr>
-                      <td>Thabo</td>
-                      <td>Senatsi</td>
-                      <td>6701235647895</td>
-                      <td>126/23</td>
+                      <td>Beauty Maponya</td>
+                      <td>Jackson Maponya</td>
+                      <td>Polokwane High Court</td>
+                      <td>Mashola</td>
+                      <td>DIVORCE</td>
+                      <td>25/11/2023</td>
+                    </tr>
+                    <tr>
+                      <td>Lethabo Mabusela</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Thando</td>
-                      <td>Makgamatha</td>
-                      <td>5801235647895</td>
-                      <td>2526/22</td>
+                      <td>Polokwane High Court</td>
+                      <td>Mathabatha</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
+                      <td>26/11/2023</td>
                     </tr>
                     <tr>
-                      <td>James</td>
-                      <td>Pheetla</td>
-                      <td>9701235647895</td>
-                      <td>2956/22</td>
+                      <td>Thabo Senatsi</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Herrod Chandler</td>
-                      <td>Senyatsi</td>
-                      <td>0102056897456</td>
-                      <td>59/20</td>
-                      <td>Civil</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Rhona Davidson</td>
-                      <td>Mathebula</td>
-                      <td>8006898545604</td>
-                      <td>55/19</td>
-                      <td>Civil</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Colleen Hurst</td>
-                      <td>Francisco</td>
-                      <td>1203456879510</td>
-                      <td>5050/5</td>
-                      <td>Estate</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Sonya</td>
-                      <td>Frost</td>
-                      <td>8905098745632</td>
-                      <td>126</td>
-                      <td>Estate</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Jena Gaines</td>
-                      <td>London</td>
-                      <td>0002036547986</td>
-                      <td>30</td>
+                      <td>Polokwane High Court</td>
+                      <td>Mathabatha</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
+                      <td>18/02/2024</td>
                     </tr>
                     <tr>
-                      <td>Quinn Flynn</td>
-                      <td>Support Lead</td>
-                      <td>Edinburgh</td>
-                      <td>22</td>
-                      <td>Estate</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Charde Marshall</td>
-                      <td>Francisco</td>
-                      <td>0908055978456</td>
-                      <td>36/19</td>
+                      <td>Thando Makgamatha</td>
                       <td>RAF</td>
-                      <td><a href="#">More</a></td>
+                      <td>Office</td>
+                      <td>Mavhu</td>
+                      <td>RAF</td>
+                      <td>14/02/2024</td>
                     </tr>
                   </tbody>
                 </table>

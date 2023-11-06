@@ -9,11 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard Mashola CMS</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
-      rel="stylesheet"
-    />
+    <title>Add Client Page</title>
     <link href="css/styles.css" rel="stylesheet" />
     <script
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
@@ -39,9 +35,9 @@
         class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"
       >
         <div class="input-group">
-          <button class="btn btn-primary" id="btnAddNewClient" type="button">
-            <a href="addClient.html" class="text-white text-decoration-none">
-              Add New Client
+          <button class="btn btn-primary" id="btnDash" type="button">
+            <a href="index.html" class="text-white text-decoration-none">
+              Dashboard
             </a>
           </button>
         </div>
@@ -111,9 +107,9 @@
                 data-bs-parent="#sidenavAccordion"
               >
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="addClient.html">Add Client</a>
-                    <a class="nav-link" href="schedule.html">View Schedule</a>
-                    <a class="nav-link" href="addSchedule.html">Add Schedule</a>
+                  <a class="nav-link" href="addClient.html">Add Client</a>
+                  <a class="nav-link" href="schedule.html">View Schedule</a>
+                  <a class="nav-link" href="addSchedule.html">Add Schedule</a>
                 </nav>
               </div>
               <a
@@ -227,145 +223,177 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h1 class="mt-4">Dashboard</h1>
+            <h1 class="mt-4">Add Client</h1>
             <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <a href="index.html">Dashboard</a>
+              </li>
+              <li class="breadcrumb-item active">Add Client</li>
             </ol>
-
             <div class="card mb-4">
-              <div class="card-header">
-                <i class="fas fa-table me-1"></i>
-                Clients
-              </div>
               <div class="card-body">
-                <table id="datatablesSimple">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Surname</th>
-                      <th>Id number</th>
-                      <th>Case No.</th>
-                      <th>Matter</th>
-                      <th>Links</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Surname</th>
-                      <th>Id</th>
-                      <th>Case No.</th>
-                      <th>Matter</th>
-                      <th>Links</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <tr>
-                      <td>Thabo</td>
-                      <td>Segwale</td>
-                      <td>9801235647895</td>
-                      <td>256/22</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Beauty</td>
-                      <td>Maponya</td>
-                      <td>0001235647895</td>
-                      <td>256/23</td>
-                      <td>Divorce</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Lethabo</td>
-                      <td>Mabusela</td>
-                      <td>9909235647895</td>
-                      <td>256/20</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Thabo</td>
-                      <td>Senatsi</td>
-                      <td>6701235647895</td>
-                      <td>126/23</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Thando</td>
-                      <td>Makgamatha</td>
-                      <td>5801235647895</td>
-                      <td>2526/22</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>James</td>
-                      <td>Pheetla</td>
-                      <td>9701235647895</td>
-                      <td>2956/22</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Herrod Chandler</td>
-                      <td>Senyatsi</td>
-                      <td>0102056897456</td>
-                      <td>59/20</td>
-                      <td>Civil</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Rhona Davidson</td>
-                      <td>Mathebula</td>
-                      <td>8006898545604</td>
-                      <td>55/19</td>
-                      <td>Civil</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Colleen Hurst</td>
-                      <td>Francisco</td>
-                      <td>1203456879510</td>
-                      <td>5050/5</td>
-                      <td>Estate</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Sonya</td>
-                      <td>Frost</td>
-                      <td>8905098745632</td>
-                      <td>126</td>
-                      <td>Estate</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Jena Gaines</td>
-                      <td>London</td>
-                      <td>0002036547986</td>
-                      <td>30</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Quinn Flynn</td>
-                      <td>Support Lead</td>
-                      <td>Edinburgh</td>
-                      <td>22</td>
-                      <td>Estate</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                    <tr>
-                      <td>Charde Marshall</td>
-                      <td>Francisco</td>
-                      <td>0908055978456</td>
-                      <td>36/19</td>
-                      <td>RAF</td>
-                      <td><a href="#">More</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <form>
+                  <div class="container text-center">
+                    <div class="row align-items-start">
+                      <div class="col-lg-6 col-sm-12 mb-3">
+                        
+                          <label for="newClientNameInput" class="form-label"
+                            >Name(s)</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="newClientNameInput"
+                            placeholder="James Thabang"
+                          />
+      
+                          <div class="form-text">Start Every Word With CAPS.</div>
+                        
+                      </div>
+                      <div class="col-lg-6 col-sm-12 mb-3">
+                       
+                          <label for="newClientSurnameInput" class="form-label"
+                            >Surname</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="newClientSurnameInput"
+                            placeholder="Mthembu"
+                          />
+                       
+                      </div>
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientIdInput" class="form-label"
+                      >ID Number</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="newClientIdInput"
+                      placeholder="9802068745080"
+                    />
+                      </div>
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientAddressInput" class="form-label"
+                        >Address</label
+                        >
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="newClientAddressInput"
+                        placeholder="Ga-Mathabatha"
+                        />
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientContactsInput" class="form-label"
+                        >Contacts</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="newClientAddressInput"
+                        placeholder="0735846985"
+                      />
+                      </div>
+        
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientCaseNumberInput" class="form-label"
+                        >Case Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="newClientCaseNumberInput"
+                        placeholder="257/20"
+                      />
+                      
+                      </div>
+                      <div class="row">
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientNextOfKinNameInput" class="form-label"
+                      >Next Of Kin Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="newClientNextOfKinNameInput"
+                      placeholder="Lerato"
+                    />
+                      </div>
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientNextOfKinContactsInput" class="form-label"
+                        >Next Of Kin Contacts</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="newClientNextOfKinContactsInput"
+                        placeholder="0726984563"
+                      />
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientMatterTypeInput" class="form-label"
+                        >Please Select Matter Type</label
+                      >
+                        <select class="form-select" id="newClientMatterTypeInput">
+                          <option id="NONE" selected value="NONE">Matter Type</option>
+                          <option id="RAF" value="RAF">RAF</option>
+                          <option id="CIVIL" value="CIVIL">CIVIL</option>
+                          <option id="DIVORCE" value="DIVORCE">DIVORCE</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3 col-sm-12 mb-3">
+                        <label for="newClientHandlerInput" class="form-label"
+                        >Handler</label
+                      >
+                      <select class="form-select" id="newClientHandlerInput">
+                        <option id="NotAllocated" selected value="NotAllocated">Matter Handler</option>
+                        <option id="Mathabatha" value="Mathabatha">Mathabatha</option>
+                        <option id="Mashola" value="Mashola">Mashola</option>
+                        <option id="Khomotso" value="Khomotso">Khomotso</option>
+                        <option id="Mavhu" value="Mavhu">Mavhu</option>
+                      </select>
+                      </div>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <p class="btn btn-primary w-100" id="addNewDocument" >Add Another PDF</p>
+                    </div>
+<div class="col-lg-3">
+
+  <div class="mb-3">
+   
+    <input class="form-control" type="file" id="formFile" />
+  </div>
+</div>
+</div>
+                     </div>
+<div class="row">
+<div class="col-lg-6 col-sm-12 mb-3"><div class="input-group">
+  <span class="input-group-text">Notes:</span>
+  <textarea
+    class="form-control"
+    aria-label="With textarea"
+  ></textarea>
+</div></div>
+</div>
+
+
+
+
+<div class="col-lg-6">
+  
+  <button type="submit" class="btn btn-primary mt-4 ">
+    Add Client
+  </button>
+</div>
+</div>
+                </form>
+              </div>
               </div>
             </div>
           </div>
@@ -375,14 +403,10 @@
             <div
               class="d-flex align-items-center justify-content-between small"
             >
-              <div class="text-muted">Developed By: Bro Fast Digitals</div>
+              <div class="text-muted">Developed By: Bro Fast</div>
 
               <div class="text-muted">Copyright &copy; P.E Mashola 2023</div>
-              <div>
-                <a href="#">Privacy Policy</a>
-                &middot;
-                <a href="#">Terms &amp; Conditions</a>
-              </div>
+            </div> 
             </div>
           </div>
         </footer>
@@ -393,16 +417,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/scripts.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/datatables-simple-demo.js"></script>
   </body>
 </html>
