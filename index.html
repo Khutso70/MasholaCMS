@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
+    <title>Dashboard Mashola CMS</title>
     <link
       href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
       rel="stylesheet"
@@ -21,9 +21,11 @@
     ></script>
   </head>
   <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
       <!-- Navbar Brand-->
-      <a class="navbar-brand ps-3" href="index.html">P.E Mashola (CMS)</a>
+      <a class="navbar-brand ps-3" href="index.html"
+        ><img src="assets/img/logo-removebg-preview.png" alt=""
+      /></a>
       <!-- Sidebar Toggle-->
       <button
         class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -37,18 +39,15 @@
         class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"
       >
         <div class="input-group">
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Search for..."
-            aria-label="Search for..."
-            aria-describedby="btnNavbarSearch"
-          />
-          <button class="btn btn-primary" id="btnNavbarSearch" type="button">
-            <i class="fas fa-search"></i>
+          <button class="btn btn-primary" id="btnAddNewClinet" type="button">
+            <a href="" class="text-white text-decoration-none">
+              Add New Client
+            </a>
           </button>
         </div>
       </form>
+      <!-- Button trigger modal -->
+
       <!-- Navbar-->
       <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
         <li class="nav-item dropdown">
@@ -75,7 +74,10 @@
     </nav>
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <nav
+          class="sb-sidenav accordion sb-sidenav-light"
+          id="sidenavAccordion"
+        >
           <div class="sb-sidenav-menu">
             <div class="nav">
               <div class="sb-sidenav-menu-heading">Core</div>
@@ -217,11 +219,20 @@
                   </div>
                 </nav>
               </div>
-             
+              <div class="sb-sidenav-menu-heading">Addons</div>
+              <a class="nav-link" href="chart.s.html">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-chart-area"></i>
+                </div>
+              </a>
+              <a class="nav-link" href="table.s.html">
+                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+              </a>
+            </div>
           </div>
           <div class="sb-sidenav-footer">
             <div class="small">Logged in as:</div>
-            Start Bootstrap
+            P.E Mashola
           </div>
         </nav>
       </div>
@@ -328,7 +339,7 @@
                     <tr>
                       <td>Colleen Hurst</td>
                       <td>Francisco</td>
-                      <td>12034568795110</td>
+                      <td>1203456879510</td>
                       <td>5050/5</td>
                       <td>Estate</td>
                       <td><a href="#">More</a></td>
@@ -352,7 +363,7 @@
                     <tr>
                       <td>Quinn Flynn</td>
                       <td>Support Lead</td>
-                      <td>6101289874563</td>
+                      <td>Edinburgh</td>
                       <td>22</td>
                       <td>Estate</td>
                       <td><a href="#">More</a></td>
